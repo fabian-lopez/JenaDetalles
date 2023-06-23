@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JENA Detalles</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <nav class="navbar"
-      style="background-color:#95cef4"
-    >
+    <nav class="navbar" style="background-color: #95cef4">
       <div class="container-fluid">
         <a class="navbar-brand" href="./Inicio.html">
           <img src="./src/JenaLogoNoBG.png" alt="JenaDetalles" />
@@ -40,7 +41,7 @@
               <a class="nav-link" href="#">Precios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -48,31 +49,75 @@
     </nav>
 
     <main class="mainContainer">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner" style="height: 90vh;">
-              <div class="carousel-item active" >
-                <img src="src/JenaCarrousel.png" class="d-block w-100" style="height: 90vh;" alt="Pride">
-              </div>
-              <div class="carousel-item" style="background-color: #efe7e4;">
-                <img src="src/Uso.jpg" class="d-block justify-content-center" style="display: flex; align-items: center; height: 90vh;"  alt="Uso">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner" style="height: 90vh">
+          <div class="carousel-item active">
+            <img
+              src="src/JenaCarrousel.png"
+              class="d-block w-100"
+              style="height: 90vh"
+              alt="Pride"
+            />
           </div>
+          <div class="carousel-item" style="background-color: #efe7e4">
+            <img
+              src="src/Uso.jpg"
+              class="d-block justify-content-center"
+              style="display: flex; align-items: center; height: 90vh"
+              alt="Uso"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
     <section id="newProductsContainer"></section>
 
-    <footer></footer>
 
-    
+
+
+    <footer class="container">
+        <div class="row g-3">
+            <div class="col-12">
+                <ul class="nav justify-content-center">
+                    <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <b><a class="nav-link" href="https://www.facebook.com/jena.detalles">Facebook Jena</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link">Correo: <b>detalles.jena@gmail.com</b></p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link">Movil: <b>664 760 4382</b></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12">
+            <p>2023: <b>JENA DETALLES</b> All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
