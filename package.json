@@ -1,0 +1,16 @@
+{
+  "name": "jenadetalles",
+  "version": "1.0.0",
+  "description": "Servicio Online Jena Detalles",
+  "main": "Inicio.js",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/main.css",
+    "watch": "sass --watch scss/main.scss styles/main.css"
+  },
+  "author": "J. Fabian Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.63.6"
+  }
+}
