@@ -1,12 +1,7 @@
-.navbar-brand > img {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-}
 
 nav {
+    background-color: #FF00FF;
+    
     ul {
         list-style: none;
         margin: 0;
@@ -17,4 +12,15 @@ nav {
             text-decoration-line: none;
         }
     }
+
+    .navbar-brand > img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        
+    }
 }
+
+

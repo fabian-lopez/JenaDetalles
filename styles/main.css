@@ -1,11 +1,10 @@
-.navbar-brand > img {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 55px;
-  height: 55px;
+:root {
+  font-size: 10px;
 }
 
+nav {
+  background-color: #FF00FF;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -15,21 +14,49 @@ nav ul li {
   text-decoration: none;
   text-decoration-line: none;
 }
+nav .navbar-brand > img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+}
 
-:root {
-  font-size: 16px;
+.mainContainer {
+  margin: 0 0;
+  width: 100%;
 }
 
 .newProductsContainer {
-  height: 5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #00ffff;
   width: 100%;
+}
+.newProductsContainer * {
+  margin-top: 2rem;
+}
+.newProductsContainer h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.newProductsContainer .muestras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.newProductsContainer .muestras .muestrasVideos .muestrasFotos {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.newProductsContainer h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
