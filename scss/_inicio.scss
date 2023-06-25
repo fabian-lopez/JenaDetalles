@@ -1,9 +1,46 @@
+@use "./global" as *;
 
 .mainContainer {
-    margin: 0 0;
-    //height: 5rem;
+    margin: 0 0;    
     width: 100%;
+    @include bgBlanco-patron-dots;
 }
+
+.DescripcionJena {
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    width: 100%;
+
+    .Descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            align-items: center;
+            justify-items: center;
+            padding:2.5rem 2.5rem;
+        }
+
+        p {
+            font-size: 2rem;
+            padding:2.5rem 2.5rem;
+        }
+    }
+    
+    .DescripCollage {
+
+        img {
+            width: 100%; 
+            //height: 100%;
+        }
+    }
+
+    
+}
+
 
 .newProductsContainer {
     margin-top: 0;
@@ -13,17 +50,16 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: #00ffff;
     width: 100%;
+
+   
 
     * {
         margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-    }
+   
 
     .muestras {
         display: flex;

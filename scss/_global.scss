@@ -1,3 +1,20 @@
 :root{
     font-size: 10px;
 }
+
+.titulo {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+@mixin bgBlanco-patron-dots {
+    background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#ffffff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #bed5fa 75px, #bed5fa 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #bed5fa 76px, #bed5fa 77px, transparent 78px, transparent 109px),
+    #ffffff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}

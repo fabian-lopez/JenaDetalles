@@ -2,6 +2,11 @@
   font-size: 10px;
 }
 
+.titulo {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
 nav {
   background-color: #FF00FF;
 }
@@ -22,8 +27,44 @@ nav .navbar-brand > img {
   height: 55px;
 }
 
+:root {
+  font-size: 10px;
+}
+
+.titulo {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
 .mainContainer {
   margin: 0 0;
+  width: 100%;
+  background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#ffffff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #bed5fa 75px, #bed5fa 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #bed5fa 76px, #bed5fa 77px, transparent 78px, transparent 109px), #ffffff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.DescripcionJena {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  width: 100%;
+}
+.DescripcionJena .Descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.DescripcionJena .Descripcion h1 {
+  align-items: center;
+  justify-items: center;
+  padding: 2.5rem 2.5rem;
+}
+.DescripcionJena .Descripcion p {
+  font-size: 2rem;
+  padding: 2.5rem 2.5rem;
+}
+.DescripcionJena .DescripCollage img {
   width: 100%;
 }
 
@@ -35,15 +76,11 @@ nav .navbar-brand > img {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: #00ffff;
   width: 100%;
 }
 .newProductsContainer * {
   margin-top: 2rem;
-}
-.newProductsContainer h1 {
-  font-size: 3rem;
-  font-weight: 800;
+  margin-bottom: 2rem;
 }
 .newProductsContainer .muestras {
   display: flex;
