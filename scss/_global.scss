@@ -1,20 +1,83 @@
-:root{
-    font-size: 10px;
+:root {
+  font-size: 10px;
 }
 
 .titulo {
-    font-size: 4.5rem;
-    font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 800;
 }
 
 @mixin bgBlanco-patron-dots {
-    background:
-    radial-gradient(black 3px, transparent 4px),
+  background: radial-gradient(black 3px, transparent 4px),
     radial-gradient(black 3px, transparent 4px),
     linear-gradient(#ffffff 4px, transparent 0),
-    linear-gradient(45deg, transparent 74px, transparent 75px, #bed5fa 75px, #bed5fa 76px, transparent 77px, transparent 109px),
-    linear-gradient(-45deg, transparent 75px, transparent 76px, #bed5fa 76px, #bed5fa 77px, transparent 78px, transparent 109px),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #bed5fa 75px,
+      #bed5fa 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #bed5fa 76px,
+      #bed5fa 77px,
+      transparent 78px,
+      transparent 109px
+    ),
     #ffffff;
-    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+@mixin bgBlanco-patro-colmena {
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #fb1 23.5%,
+        rgba(240, 166, 17, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #b71 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #fb1 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #fb1 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #fb1 24%,
+        #b71 0,
+        #b71 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #b71 0,
+        #b71 76%,
+        #fb1 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #fb1 24%,
+        #b71 0,
+        #b71 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #b71 0,
+        #b71 76%,
+        #fb1 0
+      )
+      0 0,
+    linear-gradient(90deg, #b71 2%, #fb1 0, #fb1 98%, #b71 0%) 0 0 #fb1;
+  background-size: 40px 60px;
 }
