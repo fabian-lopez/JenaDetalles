@@ -54,6 +54,9 @@ nav .navbar-brand > img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
 }
 .DescripcionJena .Descripcion h1 {
   align-items: center;
@@ -94,6 +97,33 @@ nav .navbar-brand > img {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.mainGaleria {
+  width: 100%;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  column-gap: 1px;
+  grid-area: "filtros imagenes";
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+.mainGaleria .filtros {
+  grid-area: "filtros";
+  margin-left: 2rem;
+}
+.mainGaleria .filtros input,
+.mainGaleria .filtros label {
+  font-size: 3rem;
+}
+.mainGaleria .imagenes {
+  grid-area: "imagenes";
+  align-items: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

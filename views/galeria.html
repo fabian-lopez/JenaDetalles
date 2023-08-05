@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="../Inicio.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../Inicio.html">Prodctos</a>
+            </li>
+            <li>
+                <a href="./galeria.html">Galeria</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mainGaleria">
+        <article class="filtros">
+            
+        </article>
+        <article class="imagenes">
+
+        </article>
+    </main>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../scripts/filtroImgs.js"></script>
+    <script>
+        var ltipos = [];
+        
+        async function loadTipos(){
+            console.log("cargando...")
+            ltipos = await getAllTipos();
+            //console.log(ltipos);
+            await generaControlesOpciones(ltipos);
+        }
+
+        loadTipos();
+        
+        
+
+        
+    </script>
+    
+</body>
+</html>
